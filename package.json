@@ -1,0 +1,28 @@
+{
+    "name": "data-pager",
+    "version": "0.0.1",
+    "description": "Data pager",
+    "main": "./index.js",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:mvhenten/data-pager.git"
+    },
+    "keywords": [
+  ],
+    "dependencies": {
+        "lodash": ">=1.2.1"
+    },
+    "devDependencies": {
+        "Faker": "~0.5.11",
+        "mocha": ">=1.9.0",
+        "js-beautify": ">=1.2.0",
+        "jshint": "*"
+    },
+    "scripts": {
+        "test": "./node_modules/mocha/bin/mocha -u tdd -R spec test"
+    },
+    "author": "Matthijs van Henten",
+    "license": "GPL",
+    "readmeFilename": "README.md",
+    "gitHead": ""
+}
