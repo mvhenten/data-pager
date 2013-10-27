@@ -8,7 +8,7 @@
         "url": "git@github.com:mvhenten/data-pager.git"
     },
     "keywords": [
-        'data', 'pagination', 'paging', 'pager', 'database', 'navigation', 'result', 'resultset', 'query'
+        "data", "pagination", "paging", "pager", "database", "navigation", "result", "resultset", "query"
   ],
     "devDependencies": {
         "mocha": ">=1.9.0",
