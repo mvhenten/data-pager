@@ -50,7 +50,7 @@ Example
 Methods
 =======
 
-### total
+#### total
 
 Sets or gets the total entries in this set
 
@@ -63,7 +63,7 @@ Sets or gets the total entries in this set
 
 *Number*,  value Total entries in this set
 
-### perpage
+#### perpage
 
 Sets or gets the entries perpage
 
@@ -75,7 +75,7 @@ Sets or gets the entries perpage
 
 *Number*,  entries Total entries per page
 
-### page
+#### page
 
 Sets or gets the current page
 
@@ -83,55 +83,55 @@ Sets or gets the current page
 
 *Number*,  page Current page
 
-### entriesOnPage
+#### entriesOnPage
 
 **Returns**
 
 *Number*,  entries Number of entries on this page
 
-### first
+#### first
 
 **Returns**
 
 *Number*,  first First page (always 1)
 
-### last
+#### last
 
 **Returns**
 
 *Number*,  last Last page
 
-### previous
+#### previous
 
 **Returns**
 
 *Number*,  prev Previous page, or null if this is the first page
 
-### next
+#### next
 
 **Returns**
 
 *Number*,  next Next page, or null if this is the last page
 
-### skip
+#### skip
 
 **Returns**
 
 *Number*,  skip Number of entries to skip from the database
 
-### firstEntry
+#### firstEntry
 
 **Returns**
 
 *Number*,  entry Number of the first entry on the current page
 
-### lastEntry
+#### lastEntry
 
 **Returns**
 
 *Number*,  entry Number of the last entry on the current page
 
-### previousPages
+#### previousPages
 
 List n previous pages before this page
 
@@ -139,7 +139,7 @@ List n previous pages before this page
 
 *Array*,  pages Array with page numbers
 
-### nextPages
+#### nextPages
 
 List n previous pages after this page, excluding the last page
 
