@@ -19,7 +19,7 @@ data-pager
 
 ```javascript
 
-    var Pager = require('datapager'),
+    var Pager = require('data-pager'),
         assert = require('assert');
 
     var total = 10,
