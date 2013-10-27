@@ -2,9 +2,8 @@ data-pager
 ==========
 ### Hommage to Data::Pager
 
-`data-pager` is a simple data pager based on
-[Data::Page](http://search.cpan.org/~lbrocard/Data-Page-2.02/lib/Data/Page.pm),
-written for the exact same reasons:
+`data-pager` is a simple data pager based on [Data::Page](http://search.cpan.org/~lbrocard/Data-Page-2.02/lib/Data/Page.pm)
+, written for the exact same reasons:
 
 > When searching through large amounts of data, it is often the case that a result set is returned that is larger than we want to display on one page. This results in wanting to page through various pages of data. The maths behind this is unfortunately fiddly, hence this module.
 >
@@ -14,6 +13,8 @@ written for the exact same reasons:
 
 
 Example
+
+```javascript
 
     var Pager = require('data-pager'),
         assert = require('assert');
@@ -43,6 +44,8 @@ Example
     assert.equal( pager.nextPages(),  []);
     assert.equal( pager.previousPages(),  [2, 3]);
 
+```
+
 
 Methods
 =======
@@ -51,9 +54,10 @@ total
 -------
 Sets or gets the total entries in this set
 
+```javascript
     pager.total = 42;
     assert.equal( pager.perpage, 42 );
-
+```
 
 **Returns**
 
@@ -63,9 +67,10 @@ perpage
 ---------
 Sets or gets the entries perpage
 
+```javascript
     pager.perpage = 5;
     assert.equal( pager.perpage, 5 );
-
+```
 **Returns**
 
 *Number*,  entries Total entries per page
