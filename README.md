@@ -1,8 +1,8 @@
-datapager
+data-pager
 ==========
 ### Hommage to Data::Pager
 
-`datapager` is a simple data pager based on [Data::Page](http://search.cpan.org/~lbrocard/DataPage2.02/lib/Data/Page.pm)
+`data-pager` is a simple data pager based on [Data::Page](http://search.cpan.org/~lbrocard/DataPage2.02/lib/Data/Page.pm)
 , written for the exact same reasons:
 
 > When searching through large amounts of data, it is often the case that a result set is returned that is larger than we want to display on one page. This results in wanting to page through various pages of data. The maths behind this is unfortunately fiddly, hence this module.
