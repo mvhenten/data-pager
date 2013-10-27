@@ -1,22 +1,22 @@
-data-pager
+datapager
 ==========
 ### Hommage to Data::Pager
 
-`data-pager` is a simple data pager based on [Data::Page](http://search.cpan.org/~lbrocard/Data-Page-2.02/lib/Data/Page.pm)
+`datapager` is a simple data pager based on [Data::Page](http://search.cpan.org/~lbrocard/DataPage2.02/lib/Data/Page.pm)
 , written for the exact same reasons:
 
 > When searching through large amounts of data, it is often the case that a result set is returned that is larger than we want to display on one page. This results in wanting to page through various pages of data. The maths behind this is unfortunately fiddly, hence this module.
 >
 > The main concept is that you pass in the number of total entries, the number of entries per page, and the current page number. You can then call methods to find out how many pages of information there are, and what number the first and last entries on the current page really are.
 >
-> For example, say we wished to page through the integers from 1 to 100 with 20 entries per page. The first page would consist of 1-20, the second page from 21-40, the third page from 41-60, the fourth page from 61-80 and the fifth page from 81-100. This module would help you work this out.
+> For example, say we wished to page through the integers from 1 to 100 with 20 entries per page. The first page would consist of 120, the second page from 2140, the third page from 4160, the fourth page from 6180 and the fifth page from 81100. This module would help you work this out.
 
 
 Example
 
 ```javascript
 
-    var Pager = require('data-pager'),
+    var Pager = require('datapager'),
         assert = require('assert');
 
     var total = 10,
@@ -50,8 +50,8 @@ Example
 Methods
 =======
 
-total
--------
+### total
+
 Sets or gets the total entries in this set
 
 ```javascript
@@ -63,8 +63,8 @@ Sets or gets the total entries in this set
 
 *Number*,  value Total entries in this set
 
-perpage
----------
+### perpage
+
 Sets or gets the entries perpage
 
 ```javascript
@@ -75,72 +75,72 @@ Sets or gets the entries perpage
 
 *Number*,  entries Total entries per page
 
-page
-------
+### page
+
 Sets or gets the current page
 
 **Returns**
 
 *Number*,  page Current page
 
-entriesOnPage
----------------
+### entriesOnPage
+
 **Returns**
 
 *Number*,  entries Number of entries on this page
 
-first
--------
+### first
+
 **Returns**
 
 *Number*,  first First page (always 1)
 
-last
-------
+### last
+
 **Returns**
 
 *Number*,  last Last page
 
-previous
-----------
+### previous
+
 **Returns**
 
 *Number*,  prev Previous page, or null if this is the first page
 
-next
-------
+### next
+
 **Returns**
 
 *Number*,  next Next page, or null if this is the last page
 
-skip
-------
+### skip
+
 **Returns**
 
 *Number*,  skip Number of entries to skip from the database
 
-firstEntry
-------------
+### firstEntry
+
 **Returns**
 
 *Number*,  entry Number of the first entry on the current page
 
-lastEntry
------------
+### lastEntry
+
 **Returns**
 
 *Number*,  entry Number of the last entry on the current page
 
-previousPages
----------------
+### previousPages
+
 List n previous pages before this page
 
 **Returns**
 
 *Array*,  pages Array with page numbers
 
-nextPages
------------
+### nextPages
+
 List n previous pages after this page, excluding the last page
 
 **Returns**
