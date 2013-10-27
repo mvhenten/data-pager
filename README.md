@@ -11,8 +11,11 @@ datapager
 >
 > For example, say we wished to page through the integers from 1 to 100 with 20 entries per page. The first page would consist of 120, the second page from 2140, the third page from 4160, the fourth page from 6180 and the fifth page from 81100. This module would help you work this out.
 
+### Installation
 
-Example
+    npm install data-pager
+
+### Example
 
 ```javascript
 
