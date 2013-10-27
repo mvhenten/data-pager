@@ -2,6 +2,8 @@ data-pager
 ==========
 ### Hommage to Data::Pager
 
+[![Build Status](https://travis-ci.org/mvhenten/data-pager.png)](https://travis-ci.org/mvhenten/data-pager.png)
+
 `data-pager` is a simple data pager based on [Data::Page](http://search.cpan.org/~lbrocard/DataPage2.02/lib/Data/Page.pm)
 , written for the exact same reasons:
 
