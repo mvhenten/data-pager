@@ -77,24 +77,25 @@ suite('data-pager', function() {
     });
 
     test('Constructor with random data', function() {
-        _.times(99, function() {
+        _.times(999, function() {
             var total = _.random(0, 999),
                 perpage = _.random(1, 999),
                 current = 1;
 
-            var pager = new Pager(total, perpage, current);
+            var pager = new Pager(total, perpage, current),
+                last = total / perpage;
 
             assert.equal(pager.total, total, 'total: value was set in constructor');
             assert.equal(pager.perpage, perpage, 'perpage: value was set in constructor');
-            assert.equal(pager.last, parseInt(total / perpage) + 1);
+            assert.equal(pager.last, Math.max(1, last % 1 === 0 ? last : parseInt(last) + 1));
 
             for (var i = 0; i < pager.last; i++) {
+                pager.page = i + 1;
+
                 var page = i + 1,
                     first = (i * perpage),
                     last = Math.min(pager.total, page * perpage) - 1,
-                    entries = (total - page * perpage) >= 0 ? perpage : total % perpage;
-
-                pager.page = page;
+                    entries = (page * perpage >= total) ? total % perpage : perpage;
 
                 assert.equal(pager.page, page);
                 assert.equal(pager.firstEntry, first);
