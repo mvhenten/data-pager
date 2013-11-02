@@ -1,6 +1,6 @@
 {
     "name": "data-pager",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Abstraction for the fiddly logic associated with paging results",
     "main": "./index.js",
     "repository": {

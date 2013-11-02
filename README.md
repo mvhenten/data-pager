@@ -13,6 +13,13 @@ data-pager
 >
 > For example, say we wished to page through the integers from 1 to 100 with 20 entries per page. The first page would consist of 120, the second page from 2140, the third page from 4160, the fourth page from 6180 and the fifth page from 81100. This module would help you work this out.
 
+I'd also like to refer to that joke about _off by one errors_.
+
+### Changelog
+
+* 27/10/2013 initial release
+* 02/11/2013 off-by-one error in "pager.last" logic
+
 ### Installation
 
     npm install data-pager
