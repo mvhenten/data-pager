@@ -1,6 +1,6 @@
 {
     "name": "data-pager",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Abstraction for the fiddly logic associated with paging results",
     "main": "./index.js",
     "repository": {
@@ -22,5 +22,5 @@
     "author": "Matthijs van Henten",
     "license": "GPL",
     "readmeFilename": "README.md",
-    "gitHead": "ff1d02bbb0198a1a5c6ed164f04fa71ae7356598"
+    "gitHead": "5012042590e8425626bb8729e4728be0536089a7"
 }
