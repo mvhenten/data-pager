@@ -22,7 +22,7 @@ suite('data-pager', function() {
                 skip: 0,
                 previous: null,
                 next: 2,
-                nextPages: [2, 3],
+                nextPages: [2, 3, 4],
                 previousPages: []
             },
             {
@@ -56,7 +56,7 @@ suite('data-pager', function() {
                 previous: 3,
                 next: null,
                 nextPages: [],
-                previousPages: [2, 3],
+                previousPages: [1, 2, 3],
             },
         ];
 
@@ -70,8 +70,8 @@ suite('data-pager', function() {
             assert.equal(pager.next, testCase.next);
             assert.equal(pager.skip, testCase.skip);
             assert.equal(pager.entriesOnPage, testCase.entries);
-            assert.deepEqual(pager.nextPages(2), testCase.nextPages);
-            assert.deepEqual(pager.previousPages(2), testCase.previousPages, 'page: ' + pager.page + ': ' + pager.previousPages(2).toString(', '));
+            assert.deepEqual(pager.nextPages(4), testCase.nextPages);
+            assert.deepEqual(pager.previousPages(4), testCase.previousPages);
         });
 
     });
